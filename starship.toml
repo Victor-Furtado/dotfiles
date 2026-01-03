@@ -1,0 +1,33 @@
+add_newline = true
+
+############################
+# PROMPT
+############################
+[character]
+success_symbol = "[➜](bold #2e7d32)"
+error_symbol   = "[➜](bold #d32f2f)"
+
+############################
+# DIRECTORY
+############################
+[directory]
+style = "bold #2e7d32"
+truncation_length = 3
+truncate_to_repo = true
+
+############################
+# GIT
+############################
+[git_branch]
+style = "bold #fbc02d"
+
+[git_status]
+style = "bold #fbc02d"
+
+############################
+# CMD DURATION
+############################
+[cmd_duration]
+style = "#9e9e9e"
+min_time = 500
+show_milliseconds = false

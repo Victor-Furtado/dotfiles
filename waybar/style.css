@@ -1,0 +1,97 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(30, 30, 30, 0.92);
+    color: #d0d0d0;
+}
+
+/* =========================
+   WORKSPACES
+   ========================= */
+#workspaces button {
+    padding: 0 6px;
+    color: #5f6f5f;
+    border-radius: 6px;
+}
+
+#workspaces button.active {
+    color: #fbc02d;
+    background: rgba(46, 125, 50, 0.15);
+}
+
+#workspaces button.urgent {
+    color: #fbc02d;
+}
+
+/* =========================
+   CLOCK
+   ========================= */
+#clock {
+    color: #fbc02d;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+/* =========================
+   MODULES
+   ========================= */
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#network,
+#pulseaudio {
+    padding: 0 8px;
+    color: #2e7d32;
+}
+
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#backlight:hover,
+#battery:hover,
+#network:hover,
+#pulseaudio:hover {
+    color: #fbc02d;
+}
+
+/* =========================
+   BATTERY STATES
+   ========================= */
+#battery.warning {
+    color: #fbc02d;
+}
+
+#battery.critical {
+    color: #d32f2f;
+}
+
+/* =========================
+   TRAY
+   ========================= */
+#tray {
+    padding-right: 6px;
+}
+
+/* =========================
+   CUSTOM
+   ========================= */
+
+#custom-archicon {
+
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  border-radius: 26px;
+  background: #282a36;
+  transition: none;
+  padding: 2px;
+  padding-left: 0px;
+  padding-right: 2px;
+  color: #ffc777;
+}

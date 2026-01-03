@@ -1,0 +1,119 @@
+############################
+# ALACRITTY CONFIG
+# Hyprland aligned
+############################
+
+############################
+# WINDOW
+############################
+[window]
+padding = { x = 8, y = 6 }
+dynamic_padding = false
+decorations = "None"
+opacity = 0.94
+startup_mode = "Windowed"
+dynamic_title = true
+decorations_theme_variant = "Dark"
+
+############################
+# SCROLLING
+############################
+[scrolling]
+history = 20000
+multiplier = 3
+
+############################
+# FONT
+############################
+[font]
+size = 11.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+[font.bold]
+style = "Bold"
+
+[font.italic]
+style = "Italic"
+
+[font.bold_italic]
+style = "Bold Italic"
+
+############################
+# CURSOR
+############################
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 750
+unfocused_hollow = true
+thickness = 0.15
+
+############################
+# COLORS — ADWAITA DARK GREEN
+############################
+[colors.primary]
+background = "#1e1e1e"
+foreground = "#d0d0d0"
+
+[colors.cursor]
+text = "#1e1e1e"
+cursor = "#2e7d32"
+
+[colors.selection]
+text = "#1e1e1e"
+background = "#fbc02d"
+
+############################
+# ANSI COLORS
+############################
+[colors.normal]
+black   = "#1e1e1e"
+red     = "#c62828"
+green   = "#2e7d32"
+yellow  = "#fbc02d"
+blue    = "#1565c0"
+magenta = "#6a1b9a"
+cyan    = "#00897b"
+white   = "#d0d0d0"
+
+[colors.bright]
+black   = "#616161"
+red     = "#ef5350"
+green   = "#66bb6a"
+yellow  = "#ffeb3b"
+blue    = "#42a5f5"
+magenta = "#ab47bc"
+cyan    = "#26a69a"
+white   = "#ffffff"
+
+############################
+# BELL
+############################
+[bell]
+duration = 0
+
+############################
+# SELECTION
+############################
+[selection]
+save_to_clipboard = true
+
+############################
+# TERMINAL
+############################
+[terminal]
+osc52 = "OnlyCopy"
+
+############################
+# MOUSE
+############################
+[mouse]
+hide_when_typing = true
+
+############################
+# DEBUG
+############################
+[debug]
+log_level = "Warn"

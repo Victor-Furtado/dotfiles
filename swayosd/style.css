@@ -1,0 +1,27 @@
+window {
+    background: rgba(30, 30, 30, 0.92);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+image {
+    color: #fbc02d;
+}
+
+label {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 13px;
+}
+
+progressbar {
+    min-height: 8px;
+    border-radius: 6px;
+}
+
+progressbar trough {
+    background: #2a2a2a;
+}
+
+progressbar progress {
+    background: #fbc02d;
+}
