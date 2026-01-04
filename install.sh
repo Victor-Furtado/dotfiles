@@ -75,6 +75,11 @@ if [[ -f "$SCRIPT_DIR/starship.toml" ]]; then
   rsync -a "$SCRIPT_DIR/starship.toml" "$HOME/.config/starship.toml"
 fi
 
+if [[ -f "$SCRIPT_DIR/.zshrc" ]]; then
+  log "Installing .zshrc"
+  cp "$SCRIPT_DIR/.zshrc" "$HOME/.zshrc"
+fi
+
 # ------------------------------------------------------------------
 # zsh default shell
 # ------------------------------------------------------------------
