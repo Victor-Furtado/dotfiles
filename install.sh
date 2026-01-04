@@ -66,6 +66,7 @@ stow_dir waybar
 stow_dir fastfetch
 stow_dir alacritty
 stow_dir swayosd
+stow_dir conky
 
 # ------------------------------------------------------------------
 # free files

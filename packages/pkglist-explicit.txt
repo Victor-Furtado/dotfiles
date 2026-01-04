@@ -6,9 +6,12 @@ bluetui
 bluez
 bluez-utils
 brightnessctl
+btop
 btrfs-progs
+calcurse
 chromium
 cliphist
+conky
 efibootmgr
 eza
 fastfetch
@@ -25,6 +28,7 @@ gst-plugins-ugly
 gvfs
 hyprland
 hyprlauncher
+impala
 iwd
 libpulse
 mako
@@ -40,6 +44,7 @@ pipewire-jack
 pipewire-pulse
 polkit-kde-agent
 power-profiles-daemon
+pulsemixer
 qt5ct
 ripgrep
 slurp
