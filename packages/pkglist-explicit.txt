@@ -28,6 +28,7 @@ gst-plugins-ugly
 gvfs
 hyprland
 hyprlauncher
+hyprpaper
 impala
 iwd
 libpulse
