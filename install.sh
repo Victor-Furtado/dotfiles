@@ -66,6 +66,7 @@ stow_dir swayosd
 stow_dir conky
 stow_dir nchat
 stow_dir mako
+stow_dir ly
 
 # ------------------------------------------------------------------
 # free files
@@ -93,6 +94,8 @@ fi
 # ------------------------------------------------------------------
 log "Enabling services"
 
+sudo systemctl enable --now ly@tty1 || true
+sudo systemctl disable --now getty@tty1 || true
 sudo systemctl enable --now bluetooth.service || true
 sudo systemctl enable --now power-profiles-daemon.service || true
 systemctl --user enable --now wireplumber.service || true

@@ -33,6 +33,7 @@ hyprpaper
 impala
 iwd
 libpulse
+ly
 mako
 micro
 nano
