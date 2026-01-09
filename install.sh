@@ -31,20 +31,17 @@ else
 fi
 
 # ------------------------------------------------------------------
-# pacman packages
+# install packages
 # ------------------------------------------------------------------
-if [[ -f packages/pkglist-explicit.txt ]]; then
-  log "Installing pacman packages"
-  sudo pacman -S --needed - < packages/pkglist-explicit.txt
-fi
-
-# ------------------------------------------------------------------
-# AUR packages
-# ------------------------------------------------------------------
-# if [[ -f packages/pkglist-aur.txt ]]; then
-#   log "Installing AUR packages"
-#   yay -S --needed - < packages/pkglist-aur.txt
+# if [[ -f packages/pkglist-explicit.txt ]]; then
+#   log "Installing pacman packages"
+#   sudo pacman -S --needed - < packages/pkglist-explicit.txt
 # fi
+
+if [[ -f packages/pkglist-aur.txt ]]; then
+  log "Installing AUR packages"
+  yay -S --needed - < packages/pkglist-explicit.txt
+fi
 
 # ------------------------------------------------------------------
 # dotfiles
@@ -67,6 +64,8 @@ stow_dir fastfetch
 stow_dir alacritty
 stow_dir swayosd
 stow_dir conky
+stow_dir nchat
+stow_dir mako
 
 # ------------------------------------------------------------------
 # free files

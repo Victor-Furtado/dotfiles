@@ -1,0 +1,7 @@
+[ 1][t 4][1767977776.285006999][StickersManager.cpp:7469][#2][!Td][&featured_sticker_sets_hash_[type] != featured_stickers->hash_]	Trending sticker sets hash mismatch
+[ 1][t 4][1767977776.513325691][StickersManager.cpp:3865][#2][!Td]	Receive empty emoji in sticker set 61206384934387731/pontifex from GetStickerSetQuery
+[ 1][t 4][1767977776.518488407][StickersManager.cpp:3865][#2][!Td]	Receive empty emoji in sticker set 762307384520474626/faustaomilgrau from GetStickerSetQuery
+[ 1][t 4][1767977776.536687612][StickersManager.cpp:3865][#2][!Td]	Receive empty emoji in sticker set 133864746112778245/Cisforcookie from GetStickerSetQuery
+[ 1][t 4][1767977776.552475690][StickersManager.cpp:3865][#2][!Td]	Receive empty emoji in sticker set 40599651539222534/pokemans from GetStickerSetQuery
+[ 1][t 4][1767977776.559965133][StickersManager.cpp:3865][#2][!Td]	Receive empty emoji in sticker set 5198113019002882/souffr from GetStickerSetQuery
+[ 1][t 4][1767977793.981482267][UserManager.cpp:8850][#2][!Td]	Receive inconsistent chatPhoto and chatPhotoInfo for user 8040411256

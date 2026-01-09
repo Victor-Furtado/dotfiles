@@ -12,6 +12,7 @@ calcurse
 chromium
 cliphist
 conky
+discord
 efibootmgr
 eza
 fastfetch
@@ -35,6 +36,7 @@ libpulse
 mako
 micro
 nano
+nchat
 network-manager-applet
 noto-fonts
 noto-fonts-emoji
