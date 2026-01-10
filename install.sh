@@ -101,6 +101,12 @@ sudo systemctl enable --now power-profiles-daemon.service || true
 systemctl --user enable --now wireplumber.service || true
 
 # ------------------------------------------------------------------
+# final tweaks
+# ------------------------------------------------------------------
+
+sudo cp ./ly/config.ini /etc/ly/config.ini -f
+
+# ------------------------------------------------------------------
 # done
 # ------------------------------------------------------------------
 log "Installation complete"
