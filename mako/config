@@ -1,0 +1,81 @@
+# =====================
+# GLOBAL
+# =====================
+max-history=10
+sort=-time
+default-timeout=5000
+ignore-timeout=0
+history=1
+max-visible=5
+layer=top
+anchor=top-right
+
+# =====================
+# INTERAÇÃO
+# =====================
+on-button-left=invoke-default-action
+on-button-right=dismiss
+on-button-middle=dismiss-all
+on-touch=dismiss
+
+# =====================
+# APARÊNCIA
+# =====================
+font=monospace 10
+
+width=360
+height=140
+
+outer-margin=10
+margin=10
+padding=8
+
+border-size=2
+border-radius=6
+
+background-color=#1d2021FF
+text-color=#ebdbb2FF
+border-color=#3a9d23FF
+progress-color=over #689d6aFF
+
+icons=1
+max-icon-size=48
+icon-location=left
+icon-border-radius=6
+
+markup=1
+actions=1
+text-alignment=left
+
+format=<b>%s</b>\n%b
+
+# =====================
+# AGRUPAMENTO
+# =====================
+group-by=app-name
+format=(%g) <b>%s</b>\n%b
+
+# =====================
+# NOTIFICAÇÕES CRÍTICAS
+# =====================
+[urgency=critical]
+border-color=#fb4934FF
+background-color=#282828FF
+text-color=#fbf1c7FF
+default-timeout=0
+
+# =====================
+# NOTIFICAÇÕES DE BAIXA URGÊNCIA
+# =====================
+[urgency=low]
+text-color=#a89984FF
+border-color=#504945FF
+
+# =====================
+# PLACEHOLDER (quando excede max-visible)
+# =====================
+[hidden]
+format=+%h notificações ocultas
+text-color=#f9e2afFF
+background-color=#1d2021FF
+border-color=#689d6aFF

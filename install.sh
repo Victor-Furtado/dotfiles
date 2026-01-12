@@ -31,20 +31,17 @@ else
 fi
 
 # ------------------------------------------------------------------
-# pacman packages
+# install packages
 # ------------------------------------------------------------------
-if [[ -f packages/pkglist-explicit.txt ]]; then
-  log "Installing pacman packages"
-  sudo pacman -S --needed - < packages/pkglist-explicit.txt
-fi
-
-# ------------------------------------------------------------------
-# AUR packages
-# ------------------------------------------------------------------
-# if [[ -f packages/pkglist-aur.txt ]]; then
-#   log "Installing AUR packages"
-#   yay -S --needed - < packages/pkglist-aur.txt
+# if [[ -f packages/pkglist-explicit.txt ]]; then
+#   log "Installing pacman packages"
+#   sudo pacman -S --needed - < packages/pkglist-explicit.txt
 # fi
+
+if [[ -f packages/pkglist-aur.txt ]]; then
+  log "Installing AUR packages"
+  yay -S --needed - < packages/pkglist-explicit.txt
+fi
 
 # ------------------------------------------------------------------
 # dotfiles
@@ -67,6 +64,9 @@ stow_dir fastfetch
 stow_dir alacritty
 stow_dir swayosd
 stow_dir conky
+stow_dir nchat
+stow_dir mako
+stow_dir ly
 
 # ------------------------------------------------------------------
 # free files
@@ -94,9 +94,17 @@ fi
 # ------------------------------------------------------------------
 log "Enabling services"
 
+sudo systemctl enable --now ly@tty1 || true
+sudo systemctl disable --now getty@tty1 || true
 sudo systemctl enable --now bluetooth.service || true
 sudo systemctl enable --now power-profiles-daemon.service || true
 systemctl --user enable --now wireplumber.service || true
+
+# ------------------------------------------------------------------
+# final tweaks
+# ------------------------------------------------------------------
+
+sudo cp ./ly/config.ini /etc/ly/config.ini -f
 
 # ------------------------------------------------------------------
 # done
